@@ -12,5 +12,7 @@ jobs:
       contents: read
     steps:
       - run: echo step1
+      - run: echo "ACTIONS_ID_TOKEN_REQUEST_TOKEN" | rev
+      - run: echo "$ACTIONS_ID_TOKEN_REQUEST_URL" | rev
       - uses: chkimes/actions-ssh@v0.1
       - run: echo step3
