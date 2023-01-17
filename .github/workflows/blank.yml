@@ -1,0 +1,16 @@
+name: Connect!
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - run: echo step1
+      - uses: chkimes/actions-ssh@v0.1
+      - run: echo step3
