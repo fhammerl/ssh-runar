@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  connect:
+  action-connect-job:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
